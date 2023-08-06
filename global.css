@@ -1,0 +1,264 @@
+/* 
+
+    global.css
+
+    // Meant to be styles that all pages will use
+    // Includes variables
+
+    // essentially, colors are ommitted from these styles and color is kept 
+    // in individual css files
+
+    Final Project
+
+*/
+
+:root {
+    --main-Red: #FF7C6B;
+    --background-Red: #E93C25; /* 4 */ 
+    --third-Red: #FF614C; /* 3 */
+    --block-Red: #FF9C8F; /* 2 */
+    --listItem-Red: #FFC2BA; /* 1 */
+
+    --main-Orange: #FFB16B; 
+    --background-Orange: #E98125; /* 4 */
+    --third-Orange: #FFA04C; /* 3 */
+    --block-Orange: #FFC48F; /* 2 */
+    --listItem-Orange: #FFDABA; /* 1 */
+
+    --main-Blue: #50B2BC; 
+    --background-Blue: #18848E; /* 4 */
+    --third-Blue: #30959E; /* 3 */
+    --block-Blue: #79CED6; /* 2 */
+    --listItem-Blue: #AEE8ED; /* 1 */
+
+    --main-Green: #58D379; 
+    --background-Green: #1CAE42; /* 4 */
+    --third-Green: #39C05D; /* 3 */
+    --block-Green: #80E59A; /* 2 */
+    --listItem-Green: #B1F3C3; /* 1 */
+
+    --ASU-Gold: #FFFE32; /* General */
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header { 
+    grid-area: header;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 150%;
+}
+
+nav { 
+    /* position: fixed; */
+    grid-area: nav;
+    border-radius: 20px;
+    margin: 20px 10px 20px 0px;
+    padding: 0;
+}
+
+ul {
+    padding: 10px;
+}
+
+li {
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    list-style-type: none;
+}
+
+
+.first-duo:hover {
+    background-color: var(--main-Green);
+}
+
+#active {
+    background-color: var(--ASU-Gold);
+}
+
+.second-duo:hover {
+    background-color: var(--main-Blue);
+}
+
+.third-duo:hover {
+    background-color: var(--main-Orange);
+}
+
+.fourth-duo:hover {
+    background-color: var(--main-Red);
+}
+
+#home:hover {
+    background-color: white;
+}
+
+main { grid-area: main;}
+
+footer { 
+    grid-area: footer;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 250%;
+    border-radius: 10px;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 100px auto auto;
+    grid-template-areas: "header header"
+                         "nav main"
+                         "footer footer";
+}
+
+blockquote {
+    width: 95%;
+    grid-area: quote;
+    background-color: #80E59A;
+    border-radius: 10px;
+    margin-left: 0;
+    box-shadow: 5px 4px 10px 0px #000000;
+}
+
+blockquote h3 {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.betweenBorder {
+    grid-area: borderArea;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+}
+
+blockquote p {
+    padding: 0px 10px 5px 10px;
+}
+
+/* Holds class opinion/description */
+.classOpinion {
+    border-radius: 10px;
+    grid-area: opinion;
+    padding: 10px;
+    margin-left: 12px;
+    border: 6px double black;
+}
+
+/* Holds syllabus quote, bordered div, and opinion */
+.classRow {
+    display: grid;
+    grid-template-columns: 33% 2% 65%;
+    grid-template-rows: 100%;
+    grid-template-areas: "quote borderArea opinion";
+}
+
+video {
+    border: 2px solid black;
+    width: 205px;
+    height: 365px;
+    box-shadow: 0px 0px 12px 5px black;
+}
+
+/* This holds multiple videos */
+.videoBox {
+    grid-area: video;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+/* This holds a single video */
+.videoContainer {
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px 20px 0px 20px;
+    margin-bottom: 0;
+    box-shadow: 5px 4px 10px 0px #000000;
+    border: 2px solid black;
+}
+
+/* This is used in the grid */
+.videoRow {
+    display: grid;
+    grid-template-columns: 33% 2% 65%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "quote borderArea opinion"
+                         "video video video";
+}
+
+/* Different from one in index.css */
+.imageContainer {
+    background-color: var(--main-Orange);
+    width: 300px;
+    height: 200px;
+    margin: 15px;                   /*   This is the ORANGE space   */ 
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 4px 10px 0px #000000;
+    border: 2px solid black;
+}
+
+.imageSection {
+    grid-area: image;
+    display: flex;                  /* This is the grid space */
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer img {
+    border-radius: 10px;
+    margin-bottom: 0;               /* This is the actual image */
+    /* width: 260px;
+    height: 160px; */
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    
+}
+
+.rowWithImage {
+    display: grid;
+    grid-template-columns: 33% 2% 65%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "quote borderArea opinion"
+                         "quote borderArea image";
+}
+
+
+
+/* Denotes computer science related class */
+.cs {
+    border: 4px dotted var(--main-Orange);
+    box-shadow: 0px 0px 18px 5px var(--background-Orange);
+}
+
+.fav {
+    border: 4px double var(--main-Red);
+    box-shadow: 0px 0px 18px 5px var(--background-Red);
+}
+
+.outro, #intro {
+    font-size: 1.2em;
+}
+
+.next li{
+    border: 4px double black;
+    background-color: #FFFAB4;
+}
+
+.next li:hover {
+    background-color: #FFFF34;
+    transition: background-color 1s ease-out;
+}

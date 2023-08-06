@@ -1,0 +1,59 @@
+/* 
+
+Filename: first-duo.css ///// GREEN /////
+
+Author: Gabriel Ortega
+
+Final Project
+
+
+*/
+
+body {
+    background-color: var(--background-Green);
+}
+
+header { 
+    background-color: var(--block-Green);
+}
+
+nav { 
+    background-color: var(--block-Green);
+}
+
+li {
+    background-color: var(--listItem-Green);
+}
+
+footer { 
+    background-color: var(--block-Green);
+}
+
+
+blockquote {
+    background-color: var(--block-Green);
+}
+
+.classOpinion {
+    background-color: var(--block-Green);
+}
+
+.videoContainer {
+    background-color: var(--listItem-Orange);
+}
+
+#textAndList {
+    grid-area: textAndList;
+}
+
+#row205 {
+    display: grid;
+    grid-template-columns: 33% 2% 65%;
+    grid-template-rows: 100%;
+    grid-template-areas: "quote borderArea textAndList";
+}
+
+#calcHW {
+    height: 300px;
+    width: 500px;
+}

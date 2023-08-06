@@ -1,0 +1,222 @@
+
+<!-- 
+
+    Filename: semester4.html
+
+    Author: Gabriel Ortega
+
+    Final Project - Update 2
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Here we go over classes Gabriel took during his fourth semester of university at ASU.
+     There are five pictures on this page.">
+     <title>Gabriel's Academic Journey - Semester IV</title>
+     <link rel="stylesheet" href="global.css">
+     <link rel="stylesheet" href="second-duo.css">
+ </head>
+ <body>
+     <div id="wrapper">
+ 
+ 
+         <header>Fall 2021 - Semester IV</header>
+ 
+         <!-- Navigation -->
+         <nav>
+            <ul>
+                <a href="index.html"><li id="home">Home</li></a>
+                <a href="semester1.html"><li class="first-duo">Semester I</li></a>
+                <a href="semester2.html"><li class="first-duo">Semester II</li></a>
+                <a href="semester3.html"><li class="second-duo">Semester III</li></a>
+                <a href="semester4.html"><li class="second-duo" id="active">Semester IV</li></a>
+                <a href="semester5.html"><li class="third-duo">Semester V</li></a>
+                <a href="semester6.html"><li class="third-duo">Semester VI</li></a>
+                <a href="semester7.html"><li class="fourth-duo">Semester VII</li></a>
+                <a href="outro.html"><li class="fourth-duo">Outro</li></a>
+            </ul>
+        </nav>
+ 
+         <!-- Top Section -->
+         <main>
+             <ul>
+                <li>And we're back! I am once again enrolled in classes after taking a semester off and I cannot wait
+                    to get back into the swing of things! Let's see what I learned this semester. 
+                </li>
+                <li class="cs">CSE 230 - Computer Org/Assem Lang Prog</li>
+                <div class="rowWithImage">
+                    <blockquote>
+                        <h3>Course Description</h3>
+                        <p>"Register-level computer organization. 
+                            Instruction set architecture.
+                            Assembly language. 
+                            Processor organization and design. 
+                            Memory organization. IO programming. 
+                            Exception/interrupt handling"
+                        </p>
+                    </blockquote>
+                    <div class="betweenBorder"></div>
+                    <p class="classOpinion">Alright. Time to get into the "nitty-gritty". This class went over high level assembly. Remember
+                        that item that was highlighted in red on a couple pages back with the word "Stack" on it? We are revisting that term 
+                        in this class. That is because the stack data structure is an integral structure to any classical computer. Using the stack
+                        along with other technologies like interrupts, the CPU/ALU, and I/O, we learned how to write instructions for a CPU to use.
+                        Fascinating material with a good professor, one of the better courses that I've taken!
+                    </p>
+                    <div class="imageSection">
+                        <div class="imageContainer">
+                            <img src="content/assembly.png" alt="Picture of asseembly code.">
+                        </div>
+                    </div>
+                </div>
+                <li class="fav">CSE 240 - Intro to Programming Languages</li>
+                <div class="rowWithTable">
+                    <blockquote>
+                        <h3>Course Description</h3>
+                        <p>"This course introduces diverse paradigms of programming languages, including procedural
+                            (Language C), object-oriented (Language C++), functional (Language LISP), and logic (Language
+                            Prolog) paradigm"
+                        </p>
+                    </blockquote>
+                    <div class="betweenBorder"></div>
+                    <p class="classOpinion">Another great course. This class gave me my first taste of C programming which was immensely helpful for
+                        other classes to come. Not only did it give me experience with programming in C, the course gave an overview of all
+                        different types of programming from procedural (C) to logic (prolog) programming. This was also one of the first courses that
+                        gave me a healthy challenge. My first programming course, CSE 110, wasn't too bad since I had prior programming experience and 
+                        I already knew the basics. However, this course "pulled back the curtain" for me on programming and showed me more of what 
+                        I was capable of. It was difficult but in a good way!
+                        <!-- <br>
+                        These are different programming "paradigms", which is a fancy way of saying different ideologies to programming. -->
+                    </p>
+                    <li id="tableCaption">These are different programming "paradigms", which is a fancy way of saying different ideologies to programming.</li>
+                    <table class="tableSection">
+                        <tbody class="tableContainer">
+                            <tr>
+                                <th>Paradigm</th>
+                                <th>Description</th>
+                                <th>Languages</th>
+                            </tr>
+                            <tr>
+                                <td>Procedural/Imperative</td>
+                                <td>When you think of programming, this is most likely the paradigm you are thinking of.
+                                    Programs written in this paradigm are meant to be "fully specified" and are executed
+                                    in a "step-wise function". Key features of this paradigm include: modularized code 
+                                    (also known as functions, <strong>procedures</strong>, modules, or subroutines), local and 
+                                    global variables, data <em>structures</em>, and flow control statements like conditional and 
+                                    loop statements. 
+
+                                    </td>
+                                <td>C (~1972), Pascal (1970), Cobol (1959), Fortran (1954)</td>
+                            </tr>
+                            <tr>
+                                <td>Object-Oriented</td>
+                                <td>Programs written in this paradigm are taking advantage of a technology known as "encapsulation".
+                                    <a class="actualLink" href="https://www.geeksforgeeks.org/encapsulation-in-java/">Encapsulation</a> allows for a programmer
+                                    to bundle their code into <strong>"objects"</strong> that can be used throughout their program. This paradigm also comes with
+                                    two other important features: Inheritance and Polymorphism. Inheritance is essentially a way to create new objects 
+                                    with new attributes from existing ones without rewriting code and Polymorphism allows for context-based use of 
+                                    objects. 
+                                    <div class="imageSection">
+                                        <div class="imageContainer">
+                                            <img src="content/javaClass.jpeg" alt="Example of Java code.">
+                                        </div>
+                                        <div class="imageContainer">
+                                            <img src="content/javaCode.jpeg" alt="More Java code.">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Java (~1990), Smalltalk (1972), Simula (~1965)</td>
+                            </tr>
+                            <tr>
+                                <td>Function(al)</td>
+                                <td>Programmers who create projects using this paradigm put all of their code into <strong>functions</strong>.
+                                I've very little experience with this paradigm as it isn't very common in my studies. However, I don't mind because 
+                                it can get very confusing for me personally (parentheses... so many parentheses...). Very mathematical in nature!
+                                <div class="imageSection">
+                                    <div class="imageContainer">
+                                        <img src="content/functionalPrograming.jpeg" alt="Example of functional programming code. LISP.">
+                                    </div>
+                                </div>
+                                </td>
+                                <td>Haskell (1990), ML (1973), LISP (1959)</td>
+                            </tr>
+                            <tr>
+                                <td>Logic(al)/Declarative</td>
+                                <td>A program utilizing the logic paradigm will use a set of <strong>facts</strong>, <strong>rules</strong>, 
+                                    and <strong>questions</strong> about the <strong><em>relations</em></strong> between objects. The goal here is to create a 
+                                    create a database of relationships to then handle a series of queries, or questions, about the database. 
+                                    Again, not much experience here except for a few assignments. 
+                                    <div class="imageSection">
+                                        <div class="imageContainer">
+                                            <img src="content/prologCode.jpeg" alt="Example of Prolog code.">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Prolog (1972)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> <!-- End Row -->
+                <li>GLG 101 - Intro to Geology I (Physical)</li>
+                <div class="classRow">
+                    <blockquote>
+                        <h3>Course Description</h3>
+                        <p>"Basic principles of geology, geochemistry, and geophysics. 
+                            Rocks, minerals, weathering, earthquakes, mountain building, volcanoes, 
+                            water, and glaciers. Students must complete both GLG 101 and GLG 103 to receive an SQ (general studies)."
+                        </p>
+                    </blockquote>
+                    <div class="betweenBorder"></div>
+                    <p class="classOpinion">Geology was more of a "let's get this over with" class for me, I'll be totally honest. 
+                        I generally love learning, so it wasn't so bad, but it took up a lot of my time. The class had a couple of lectures
+                        every week and a lengthy textbook assignment coupled with a quiz. A lot of the work was more tedious than anything. 
+                        We covered everything from minerals in the ground beneath us to understanding the surface of Mars.
+                    </p>
+                </div>
+                <li>HSE 101 - Human Systems Engineering</li>
+                <div class="classRow">
+                    <blockquote>
+                        <h3>Course Description</h3>
+                        <p>"This course is an introduction to the scientific study of how humans think, 
+                            feel, and interact with technology, social systems, and each other"
+                        </p>
+                    </blockquote>
+                    <div class="betweenBorder"></div>
+                    <p class="classOpinion">Oh my goodness, do I have some words for this class... I took this class because it sounds like
+                        the start to understanding the relationship between humans and technology, which I think sounds so cool to learn about. 
+                        Nope, it was essentially a psychology 101 course. I give the course the benefit of the doubt since it is an introductory
+                        course and they couldn't jump into technical jargon without laying a foundation but, if I recall correctly, there were no 
+                        lessons on application in tech. Regardless, we took the time to learn how the human brain works. Things like perception,
+                        consciousness, and personality were discussed. As was the case with geology, I enjoy learning so the class was still fascinating. 
+                        I just wish there was a more technical application. 
+                    </p>
+                </div>
+                <li>MAT 265 - Calculus for Engineers I</li>
+                <div class="classRow">
+                    <blockquote>
+                        <h3>Course Description</h3>
+                        <p>"In this course, we will focus on limits and continuity, 
+                            differential calculus of functions of one variable, and an introduction to integration."
+                        </p>
+                    </blockquote>
+                    <div class="betweenBorder"></div>
+                    <p class="classOpinion">I DID IT. I FINALLY PASSED. TIME TO MOVE ON. 
+                    </p>
+                </div>
+                <li class="outro">TLDR; I learned some Assembly, new programming languages (yay!), and I finally passed Calculus I (another yay!).
+                    Let's see what next semester has in store for us.
+                </li>
+                <a class="next" href="semester5.html"><li>Next Semester</li></a>
+             </ul>
+         </main>
+ 
+         <footer>Gabriel Ortega &odot; 2023 &odot; I graduate next year!</footer>
+ 
+     </div>
+     
+ </body>
+ </html>

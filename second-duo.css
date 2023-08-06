@@ -1,0 +1,131 @@
+/* 
+
+Filename: second-duo.css ///// BLUE /////
+
+Author: Gabriel Ortega
+
+Final Project
+
+
+*/
+
+body {
+    background-color: var(--background-Blue);
+}
+
+header { 
+    background-color: var(--block-Blue);
+}
+
+nav { 
+    background-color: var(--block-Blue);
+}
+
+li {
+    background-color: var(--listItem-Blue);
+}
+
+footer { 
+    background-color: var(--block-Blue);
+}
+
+
+blockquote {
+    background-color: var(--block-Blue);
+}
+
+.classOpinion {
+    background-color: var(--block-Blue);
+}
+
+.videoContainer {
+    background-color: var(--listItem-Blue);
+}
+
+#zoom {
+    border: 7px double red;
+}
+
+.imageContainer {
+    background-color: var(--main-Orange);
+    width: 400px;
+    height: 200px;
+    margin: 15px;                   /*   This is the ORANGE space   */ 
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 4px 10px 0px #000000;
+    border: 2px solid black;
+}
+
+.imageSection {
+    grid-area: image;
+    display: flex;                  /* This is the grid space */
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer img {
+    border-radius: 10px;
+    margin-bottom: 0;               /* This is the actual image */
+    width: 360px;
+    height: 160px;
+}
+
+.tableSection {
+    grid-area: tableSection;
+    display: flex;                  /*   Grid space / Table tag   */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0 5px 0;
+    box-shadow: 0px 0px 20px 0px #000000;
+    border-radius: 10px;
+}
+
+.tableContainer {
+    background-color: var(--main-Orange);              /* Background / TableBody Tag */
+    border-radius: 10px;
+    padding: 10px 10px 0 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+th, tr, td {
+    text-align: center;
+    border: 1px solid black;
+}
+
+tr:nth-of-type(odd) {
+    background-color: var(--listItem-Orange);
+}
+
+tr:nth-of-type(1) {
+    background-color: white;
+}
+
+#tableCaption {
+    grid-area: tableCaption;
+    background-color: var(--third-Orange);
+    display: table-caption;
+    text-align: center;
+}
+
+.rowWithTable {
+    display: grid;
+    grid-template-columns: 33% 2% 65%;
+    grid-template-rows: auto auto minmax(0, 1fr);
+    grid-template-areas: "quote borderArea opinion"
+                         "tableCaption tableCaption tableCaption"
+                            "tableSection tableSection tableSection";
+}
+
+.actualLink {
+    background-color: white;
+    padding: 2px;
+    border-radius: 5px;
+    color: var(--block-Blue);
+}

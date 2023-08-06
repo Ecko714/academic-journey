@@ -1,0 +1,89 @@
+/* 
+
+Filename: third-duo.css  ///// ORANGE /////
+
+Author: Gabriel Ortega
+
+Final Project
+
+*/
+
+body {
+    background-color: var(--background-Orange);
+}
+
+header { 
+    background-color: var(--block-Orange);
+}
+
+nav { 
+    background-color: var(--block-Orange);
+}
+
+li {
+    background-color: var(--listItem-Orange);
+}
+
+footer { 
+    background-color: var(--block-Orange);
+}
+
+
+blockquote {
+    background-color: var(--block-Orange);
+}
+
+.classOpinion {
+    background-color: var(--block-Orange);
+}
+
+.videoContainer {
+    background-color: var(--listItem-Orange);
+}
+
+.imageContainer {
+    background-color: var(--main-Orange);
+    width: 400px;
+    height: 200px;
+    /* margin-bottom: 30px; */
+    display: flex;
+    justify-content: center;            /*   This is the ORANGE space   */ 
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 4px 10px 0px #000000;
+    border: 2px solid black;
+}
+
+.imageSection {
+    grid-area: image;
+    display: flex;                  /* This is the grid space */
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer img {
+    border-radius: 10px;
+    margin-bottom: 0;               /* This is the actual image */
+    /* width: 260px;
+    height: 160px; */
+    object-fit: cover;
+}
+
+.imageContainer iframe {
+    object-fit: cover;
+}
+
+#specialImage {
+    height: 410px;
+}
+
+/* Denotes computer science related class */
+.cs {
+    border: 4px dotted var(--main-Green);
+    box-shadow: 0px 0px 18px 5px var(--background-Green);
+}
+
+.fav {
+    border: 4px double var(--main-Red);
+    box-shadow: 0px 0px 18px 5px var(--background-Red);
+}

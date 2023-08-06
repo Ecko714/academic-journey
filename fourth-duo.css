@@ -1,0 +1,139 @@
+/* 
+
+Filename: fourth-duo.css  ///// RED /////
+
+Author: Gabriel Ortega
+
+Final Project
+
+*/
+
+body {
+    background-color: var(--background-Red);
+}
+
+header { 
+    background-color: var(--block-Red);
+}
+
+nav { 
+    background-color: var(--block-Red);
+}
+
+ul {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+li {
+    background-color: var(--listItem-Red);
+}
+
+
+footer { 
+    background-color: var(--block-Red);
+}
+
+
+blockquote {
+    background-color: var(--block-Red);
+}
+
+.classOpinion {
+    background-color: var(--block-Red);
+}
+
+.videoContainer {
+    background-color: var(--listItem-Red);
+}
+
+label {
+    margin-top: 10px;
+}
+
+form {
+    background-color: var(--listItem-Red);
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    display: flex;
+    width: auto;
+    flex-direction: column;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 0px 10px 0px;
+}
+
+input[type="submit"]:active {
+    background-color: var(--main-Green);
+    box-shadow: 0px 0px 20px 0px black;
+}
+
+input, textarea {
+    border-radius: 5px;
+}
+
+textarea {
+    padding: 10px;
+}
+
+select {
+    border-radius: 5px;
+}
+
+.imageContainer {
+    background-color: var(--main-Orange);
+    width: 400px;
+    height: 200px;
+    /* margin-bottom: 30px; */
+    display: flex;
+    justify-content: center;            /*   This is the ORANGE space   */ 
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 4px 10px 0px #000000;
+    border: 2px solid black;
+}
+
+.imageSection {
+    grid-area: image;
+    display: flex;                  /* This is the grid space */
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer img {
+    border-radius: 10px;
+    margin-bottom: 0;               /* This is the actual image */
+    /* width: 260px;
+    height: 160px; */
+    object-fit: cover;
+}
+
+#CFGs {
+    height: auto;
+    padding: 20px 0;
+}
+
+#NFAs {
+    height: auto;
+    padding: 20px 0;
+}
+
+/* Denotes computer science related class */
+.cs {
+    border: 4px dotted var(--main-Green);
+    box-shadow: 0px 0px 18px 5px var(--background-Green);
+}
+
+.fav {
+    border: 4px double var(--main-Blue);
+    box-shadow: 0px 0px 18px 5px var(--background-Blue);
+}
